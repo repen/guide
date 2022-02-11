@@ -25,13 +25,13 @@
 
 скачивает зип архив с гитхаба
 
-python -c "from urllib.request import urlopen as u; d=u('https://github.com/repen/py-project/archive/refs/heads/master.zip').read();import sys;sys.stdout.buffer.write(d)" > py-project.zip
+`python -c "from urllib.request import urlopen as u; d=u('https://github.com/repen/py-project/archive/refs/heads/master.zip').read();import sys;sys.stdout.buffer.write(d)" > py-project.zip`
 
 #### распаковать проект командой
 
-python -m zipfile -e py-project.zip .
+`python -m zipfile -e py-project.zip .`
 
 
 #### Бонус узнать внешний ip вашего пк
 
-python -c "from urllib.request import urlopen as u; d=u('http://eth0.me').read();print(d)"
+`python -c "from urllib.request import urlopen as u; d=u('http://eth0.me').read();print(d)"`
